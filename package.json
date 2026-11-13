@@ -1,0 +1,37 @@
+{
+  "name": "project-memory",
+  "version": "0.1.0",
+  "description": "Document a frontend feature with Claude Code + Playwright: flow, APIs and a video, from one command.",
+  "type": "module",
+  "bin": {
+    "project-memory": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepare": "tsc"
+  },
+  "engines": {
+    "node": ">=20.12"
+  },
+  "dependencies": {
+    "jiti": "^2.4.2",
+    "marked": "^15.0.12"
+  },
+  "peerDependencies": {
+    "@playwright/test": ">=1.40.0"
+  },
+  "peerDependenciesMeta": {
+    "@playwright/test": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "typescript": "^5.6.3"
+  }
+}
